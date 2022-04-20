@@ -1,0 +1,71 @@
+.contact-container{
+    width: 50%;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.phone-container{
+    display: flex;
+    flex-direction:row;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #6B7E9B;
+
+}
+
+.phone-number a{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #6B7E9B;
+}
+
+
+
+.phone-logo{
+    margin: 3px;
+}
+
+.phone-number p{
+    margin: 0;
+
+
+   
+}
+
+@media screen and (min-width:2000px ) and (max-width:2560px ) {
+    .phone-number a{
+        font-size: 33px;
+    }
+
+    .phone-logo img{
+        width: 21px;
+    }
+
+    .youtube img{
+        width: 33px;
+    }
+
+    .instagram img{
+        width: 33px;
+    }
+
+    .facebook img{
+        width: 33px;
+    }
+
+
+
+}

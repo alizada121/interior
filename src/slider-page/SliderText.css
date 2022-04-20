@@ -1,0 +1,338 @@
+.sliderText-container{
+    width: 40%;
+    position: relative;
+    margin-bottom: 70px;
+}
+.sliderText{
+    width: 100%;
+    text-align: left;
+   
+}
+
+.sliderText-header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* margin-right:-10% !important ; */
+}
+.sliderText h1{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;  
+    margin: 0;
+    color: #435877;
+    
+
+}
+
+.sliderText-line {
+    width: 55%;
+    position: absolute;
+    border: 1px solid #435877;
+    background: #435877;
+    bottom: 7px;
+    right: 0;
+    height: 0;
+}
+.sliderText-main-text{
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: #435877;
+}
+
+.order-button-container{
+    width: 60%;
+   
+}
+
+
+
+.order-button{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+   }
+
+.order-button p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FEFCF6;
+    background-color: #435877;
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+
+.order-button p:hover{
+     background-color: #FEFCF6;
+   color: #435877;
+   border: #435877 2px solid;
+   transition: 0.5s;
+}
+
+
+.order-button-tap-container{
+    transform: translateY(-10%);
+    width: 90%;
+    background-color: #CCD7E9;
+    border: #435877 2px solid;
+    display: none;
+    opacity: 1;
+}
+
+.order-button-tap{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.text-img{
+   position: absolute;
+   top: 0;
+   opacity: 0;
+   left: 30%;
+}
+
+.order-button-tap h4{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #435877;
+}
+
+.order-button-tap p{
+    width: 80%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+
+    color: #435877;
+}
+
+.order-button-tap-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.order-button-tap-form input{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #435877;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+
+}
+
+.order-button-tap-form select{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #9C917B;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+#order-submit{
+    margin-bottom:20%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #435877;
+    color: #FEFCF6;
+    border: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 370px) {
+    .sliderText-container{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30px;
+    }
+
+    .sliderText h1{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        width: 60%;
+    }
+
+    .sliderText-main-text{
+        width: 100%;
+        font-size: 15px;
+        line-height: 150%;
+    }
+
+    .order-button-container{
+        display: none;
+    }
+
+    .sliderText-line{
+        width: 55%;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 370px) and (max-width: 414px) {
+    .sliderText-container{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30px;
+    }
+    .sliderText h1{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        width: 60%;
+    }
+
+    .sliderText-main-text{
+        width: 100%;
+        font-size: 15px;
+        line-height: 150%;
+    }
+
+    .order-button-container{
+        display: none;
+    }
+
+    .sliderText-line{
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 414px) and (max-width: 768px) {
+    .sliderText-container{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30px;
+    }
+    .sliderText h1{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        width: 60%;
+    }
+
+    .sliderText-main-text{
+        width: 100%;
+        font-size: 15px;
+        line-height: 150%;
+    }
+
+    .order-button-container{
+        display: none;
+    }
+
+    .sliderText-line{
+        width: 56%;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .sliderText-line{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 532px) and (max-width: 768px) {
+    .sliderText-line{
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .sliderText-line{
+        width: 45%;
+    }
+
+}
+
+@media screen and (min-width:  768px) and (max-width:1024px) {
+    .sliderText-container{
+        margin-left: 35px;
+    }
+
+    .sliderText h1{
+        font-size: 27px;
+    }
+
+    .sliderText-main-text{
+        font-size: 16px;
+    }
+
+    .sliderText-line{
+        display: none;
+    }
+
+    .order-button-container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1024px  ){
+    .sliderText-line{
+        display: none;
+    }
+}
+
+@media screen and (min-width:2100px ) and (max-width:2560px ) {
+    .sliderText h1{
+        font-size: 42px;
+    }
+
+    .sliderText-main-text {
+        font-size: 28px;
+    }
+
+    .order-button-container {
+        width: 70%;
+    }
+
+
+    .order-button p {
+        padding-top: 20px;
+        padding-bottom: 19px;
+        font-size: 23px;
+    }
+}
+
+
+
+

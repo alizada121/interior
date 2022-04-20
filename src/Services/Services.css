@@ -1,0 +1,286 @@
+.services-container{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+.services-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.services-header-empty{
+    width: 38%;
+    border: 1px solid #435877;
+    height: 0;
+    margin-top: 55px;
+    background-color: #435877;
+}
+
+.services-heading{
+    width: 30%;
+    margin: 0;
+}
+
+.services-heading h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;  
+    color: #435877;
+}
+
+.services-body{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service{
+    width: 29%;
+    text-align: left;
+}
+
+.service h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #9C917B;
+
+}
+
+.service p{
+    width: 85%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+
+    color: #435877;
+}
+
+.services-img {
+    width: 100%;
+    position: relative;
+
+    
+
+}
+
+.services-img img{
+    width: 100%;
+}
+
+
+.services-description{
+    position: absolute;
+    width: 70%;
+    background-color: #FEFCF6;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.services-description p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #435877;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 370px) {
+
+    .services-container{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .leftServ{
+        display: none;
+    }
+
+    .services-heading{
+        width: 70%;
+    }
+
+    .services-header-empty {
+        width: 30%;
+        margin-top: 39px;
+    }
+
+    .services-heading h2{
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .services-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service{
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .service img{
+        display: none;
+    }
+
+    .services-description{
+        display: none;
+    }
+
+    .Premium{
+        background-color: #E9E0CC33;
+    }
+    
+   
+
+}
+@media screen and (min-width: 370px) and (max-width: 414px) {
+    .services-container{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .leftServ{
+        display: none;
+    }
+
+    .services-heading{
+        width: 70%;
+    }
+
+    .services-header-empty {
+        width: 30%;
+        margin-top: 39px;
+    }
+
+    .services-heading h2{
+        font-size: 24px;
+        line-height: 29px;
+        text-align: left;
+    }
+
+    .services-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service{
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .service img{
+        display: none;
+    }
+
+    .services-description{
+        display: none;
+    }
+
+    .Premium{
+        background-color: #E9E0CC33;
+    }
+    
+    
+}
+@media screen and (min-width: 414px) and (max-width: 768px) {
+    
+
+    .leftServ{
+        display: none;
+    }
+
+    .services-heading{
+        width: 55%;
+    }
+
+    .services-header-empty {
+        width: 45%;
+        margin-top: 39px;
+    }
+
+    .services-heading h2{
+        font-size: 24px;
+        line-height: 29px;
+        text-align: left;
+        
+    }
+
+    .services-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service{
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .service img{
+        display: none;
+    }
+
+    .services-description{
+        display: none;
+    }
+
+    .Premium{
+        background-color: #E9E0CC33;
+    }
+    
+
+   
+    
+ }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .service p {
+        font-size: 12px;
+    }
+
+    .services-description{
+        display: none;
+    }
+    
+    
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+    
+}
+
+
+
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+
+   
+    
+}

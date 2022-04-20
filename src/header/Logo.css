@@ -1,0 +1,80 @@
+.logo-container{
+   
+    height: 80%;
+    position: relative;
+   
+}
+.logo-desktop{
+    position: absolute;
+    width: 30%;
+    
+}
+
+
+
+
+.logo-name-mobile{
+    color: #9C917B;
+    /* transform: rotate(-90deg); */
+    width: 50%;
+    margin-left: 10%;
+    font-family: 'Saira', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 42px;
+
+    display: none;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 370px) {
+
+    .logo-desktop{
+        display: none;
+    }
+
+    .logo-name-mobile{
+        display: block;
+    }
+
+    .logo-empty-mobile{
+        display: block;
+    }
+
+}
+
+
+@media screen and (min-width: 370px) and (max-width: 414px) {
+
+    .logo-desktop{
+        display: none;
+    }
+
+    .logo-name-mobile{
+        display: block;
+    }
+
+    .logo-empty-mobile{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 414px) and (max-width: 768px) {
+    .logo-desktop{
+        display: none;
+    }
+
+    .logo-name-mobile{
+        display: block;
+    }
+
+    .logo-empty-mobile{
+        display: block;
+    }
+}
+
+

@@ -1,0 +1,108 @@
+.servicesPage-body-container{
+    width: 80%;
+    margin-left: 10%;
+}
+.servicesPage-header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+}
+
+.servicesPage-menu-container{
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 2%;
+
+}
+.servicesPage-menu{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6B7E9B;
+    transition: 0.3s;
+    margin-right: 5px;
+ 
+     
+ }
+
+.services-serv{
+    color: #435877;
+    text-decoration: none !important;
+    font-weight: 600;
+    transition: 0.5s;
+    margin-right: 10px;
+    
+}
+.services-serv p{
+    margin:0;
+   
+}
+
+.services-empty-serv{
+    width: 100%;
+    height: 2px;
+    background-color:#435877 ;
+}
+
+.services-serv:hover{
+    color: #6B7E9B;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+   
+    transition: 0.5s;
+}
+
+
+.portfolio-menu-serv{
+    margin-right: 10px;
+    color: #435877;
+    text-decoration: none !important;
+}
+
+.portfolio-menu-serv:hover{
+    color: #6B7E9B;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 20px;
+    line-height: 24px;
+    
+     transition: 0.5s;
+}
+
+.portfolio-empty-serv{
+    width: 0%;
+    height: 2px;
+    background-color:#435877 ;
+}
+.portfolio-menu-serv p{
+    margin:0;
+  
+}
+
+
+.portfolioPage-menu p{
+   
+        cursor: pointer;
+        text-decoration: none;
+}
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 370px) {
+    .servicesPage-menu-container{
+        margin: 0;
+    }
+}

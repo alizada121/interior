@@ -6,6 +6,9 @@ import services1 from "../assets/services1.png"
 import services2 from "../assets/services2.png"
 import services3 from "../assets/services3.png"
 import { Link } from 'react-router-dom';
+import Menu from '../header/menu/Menu';
+import Contact from '../header/menu/Contact';
+import Map from '../Map/Map'
 
 function ServicesPage() {
 
@@ -179,8 +182,8 @@ function ServicesPage() {
     <div className='ServicesPage-container'>
         <div className='servicesPage-menu-container'>
         <div className='servicesPage-menu'>
-
-                <Link to="/" style={{textDecoration: "none"}}>
+          <div className='menu-sp'> 
+          <Link to="/" style={{textDecoration: "none"}}>
                 <div className='main-port' onClick={menuClick1} onMouseEnter={mainOnHover} onMouseLeave={mainOffHover} ref={mainRef}>
                   <p>Main</p>
                   <div className='main-empty-port' ref={mainEmptyRef} ></div>
@@ -195,7 +198,13 @@ function ServicesPage() {
                   <p>Portfolio</p>
                   <div className='portfolio-empty-serv'  ref={portfolioEmptyRef}></div>
                   </div>
-                </Link>
+                </Link> 
+
+          </div>
+
+              
+                {/* <Menu/> */}
+                <Contact/>
 
           </div>
        </div>
@@ -269,6 +278,11 @@ function ServicesPage() {
 
             </div>
            
+        </div>
+
+        <div className='services-footer'>
+          <Map/>
+
         </div>
 
        </div>

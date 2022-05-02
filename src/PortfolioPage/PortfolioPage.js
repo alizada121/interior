@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom'
 import "../PortfolioPage/PortfolioPage.css"
 import Menu from '../header/menu/Menu'
 import gsap from 'gsap'
-
+import Map from '../Map/Map'
 import portfolio1 from "../assets/portfolio3.png"
 import portfolio2 from "../assets/portfolio2.png"
 import portfolio3 from "../assets/portfolio3.png"
+import Contact from '../header/menu/Contact'
+
 
 function PortfolioPage() {
 
@@ -330,7 +332,8 @@ function PortfolioPage() {
         <div className='portfolioPage'>
           <div className='portfolioPage-menu-container'>
           <div className='portfolioPage-menu'>
-          <Link to="/"  style={{textDecoration: "none"}}>
+            <div className='menu-sp'>
+            <Link to="/"  style={{textDecoration: "none"}}>
           <div className='main-port' onClick={menuClick1} onMouseEnter={mainOnHover} onMouseLeave={mainOffHover} ref={mainRef}>
                   <p>Main</p>
                   <div className='main-empty-port' ref={mainEmptyRef} ></div>
@@ -347,7 +350,12 @@ function PortfolioPage() {
                   <div className='portfolio-empty-port'  ref={portfolioEmptyRef}></div>
                   </div>
 
+            </div>
+          
+            <Contact/>
           </div>
+
+         
 
           </div>
           
@@ -426,6 +434,11 @@ function PortfolioPage() {
             </div>
             
             </div>
+
+              <div className='footer-portfolio'>
+                 <Map/>
+              </div>
+           
 
           
 

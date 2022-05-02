@@ -205,6 +205,9 @@ color: #435877;
 }
 
 @media screen and (min-width: 370px) and (max-width: 414px) {
+    .order-button-tap-container{
+        transform: translateY(0%);
+    }
     .sliderText-container{
         width: 90%;
         margin-left: 5%;
@@ -229,7 +232,7 @@ color: #435877;
     }
 
     .sliderText-line{
-        width: 60%;
+        width: 55%;
     }
 
 }

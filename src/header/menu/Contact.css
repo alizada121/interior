@@ -45,6 +45,16 @@
    
 }
 
+.instagram, .youtube, .facebook{
+    cursor: pointer;
+}
+
+.fb{
+    fill: red;
+}
+
+
+
 @media screen and (min-width:2000px ) and (max-width:2560px ) {
     .phone-number a{
         font-size: 33px;

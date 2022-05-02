@@ -51,7 +51,7 @@ function Navbar() {
       <div  id="menu-btn" className={` menu-btn ${ !open ? " open" : ""}`}  ref={menuBtnRef} onClick={hamburger}>
         <div className="menu-btn-burger">
        
-
+   
         </div>
     </div>
 

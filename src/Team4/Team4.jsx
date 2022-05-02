@@ -65,12 +65,18 @@ function Team4() {
   },[height])
 
 
-  
 
-  
 
   const click14=()=>{
+    setTimeout(() => {
     gsap.to(changable14Ref.current, { transform:" translate3d(0px, 0px, 0px)",duration:1});
+    Team1Ref.current.style.opacity="1"
+    Team2Ref.current.style.opacity="0"
+    Team3Ref.current.style.opacity="0"
+    Team4Ref.current.style.opacity="0"
+
+    }, 500);
+    // gsap.to(changable14Ref.current, { transform:" translate3d(0px, 0px, 0px)",duration:1});
     // gsap.to(changable14Ref.current, { transform:" translate3d(0%, 0%, 0%)",duration:1});
     // changable14Ref.current.style.transform=" translate3d(0px, 0px, 0px)"
     
@@ -95,16 +101,20 @@ function Team4() {
    button4Ref.current.style.color="#CCD7E9 "
    button4Ref.current.style.textDecoration="none"
 
-   Team1Ref.current.style.opacity="1"
-   Team2Ref.current.style.opacity="0"
-   Team3Ref.current.style.opacity="0"
-   Team4Ref.current.style.opacity="0"
+  
   }
   
   const click24=()=>{
     // gsap.to(changable14Ref.current, { transform:` translate3d(0px, -${height*0.25}px, 0px)` ,duration:1});
+    setTimeout(() => {
+      gsap.to(changable14Ref.current, { transform:` translate3d(0px, -${textHeight }px, 0px)` ,duration:1});
+      Team1Ref.current.style.opacity="0"
+    Team2Ref.current.style.opacity="1"
+    Team3Ref.current.style.opacity="0"
+    Team4Ref.current.style.opacity="0"
+  }, 500);
 
-    gsap.to(changable14Ref.current, { transform:` translate3d(0px, -${textHeight }px, 0px)` ,duration:1});
+    
     // Team2Ref.current.style.position="absolute"
     // gsap.to(changable14Ref.current, { transform:" translate3d(0px, -440px, 0px)",duration:1});
     // gsap.to(Team1Ref.current, {position:"absolute", duration:1});
@@ -128,17 +138,21 @@ function Team4() {
     button4Ref.current.style.color="#CCD7E9 "
     button4Ref.current.style.textDecoration="none"
 
-    Team1Ref.current.style.opacity="0"
-    Team2Ref.current.style.opacity="1"
-    Team3Ref.current.style.opacity="0"
-    Team4Ref.current.style.opacity="0"
+    
 
   }
-
+   
   const click34=()=>{
     // gsap.to(changable14Ref.current, { transform:` translate3d(0px, -${ height * 0.5}px, 0px)`,duration:1});
-    gsap.to(changable14Ref.current, { transform:` translate3d(0px, -${textHeight * 2}px, 0px)` ,duration:1});
 
+    setTimeout(() => {
+    gsap.to(changable14Ref.current, { transform:` translate3d(0px, -${textHeight * 2}px, 0px)` ,duration:1});
+    Team1Ref.current.style.opacity="0"
+    Team2Ref.current.style.opacity="0"
+    Team3Ref.current.style.opacity="1"
+    Team4Ref.current.style.opacity="0"
+
+  }, 500);
     // Team1Ref.current.style.marginTop="0%"
     // Team2Ref.current.style.marginTop="0"
     // Team3Ref.current.style.marginTop="10%"
@@ -164,18 +178,22 @@ function Team4() {
     button4Ref.current.style.color="#CCD7E9 "
     button4Ref.current.style.textDecoration="none"
 
-    Team1Ref.current.style.opacity="0"
-    Team2Ref.current.style.opacity="0"
-    Team3Ref.current.style.opacity="1"
-    Team4Ref.current.style.opacity="0"
-  }
+   
+  } ;
 
   
 
 
-  const click44=()=>{
+  const click44 =()=> {
+    setTimeout(() => {
     // gsap.to(changable14Ref.current, { transform:` translate3d(0px, -${ height * 0.75 }px, 0px)`,duration:1});
     gsap.to(changable14Ref.current, { transform:` translate3d(0px, -${textHeight * 3}px, 0px)` ,duration:1});
+    Team1Ref.current.style.opacity="0"
+    Team2Ref.current.style.opacity="0"
+    Team3Ref.current.style.opacity="0"
+    Team4Ref.current.style.opacity="1"
+  }, 500);
+
 
     // gsap.to(changable14Ref.current, { transform:" translate3d(0px, -1330px, 0px)",duration:1});
     // gsap.to(changable14Ref.current, { transform:" translate3d('0%', '75%', '0%')",duration:1});
@@ -200,12 +218,9 @@ function Team4() {
     button2Ref.current.style.color="#CCD7E9 "
     button2Ref.current.style.textDecoration="none"
 
-    Team1Ref.current.style.opacity="0"
-    Team2Ref.current.style.opacity="0"
-    Team3Ref.current.style.opacity="0"
-    Team4Ref.current.style.opacity="1"
+   
       
-}
+};
 
 const swiper1mobRef=useRef();
 const swiper2mobRef=useRef();
@@ -341,8 +356,8 @@ const click44Mob=()=>{
 
 <div className='team-list-mobile4'>
             <Swiper
-                spaceBetween={180}
-                slidesPerView={1.3}
+                spaceBetween={30}
+                slidesPerView={1.6}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
               >

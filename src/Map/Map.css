@@ -51,6 +51,7 @@
 
     margin-top: 20%;
     margin-bottom: 40%;
+    cursor: pointer;
 }
 
 .map-phone {
@@ -59,6 +60,8 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
+    display: flex;
+    flex-direction: row;
 
     color: #435877;
 
@@ -76,9 +79,19 @@
     font-size: 16px;
     line-height: 20px;
     /* identical to box height */
-
+    cursor: pointer;
 
     color: #435877;
+
+}
+
+.map-mail a{
+    color: #435877;
+    text-decoration: none;
+}
+
+.map-mail a:hover{
+    color: #273447;
 
 }
 

@@ -2,6 +2,7 @@
 import React,{useRef,useState} from 'react'
 import "../Form/Form.css"
 import success from "../assets/check-mark_ccexpress.png"
+import gsap from 'gsap';
 
 const PHONE_REGEX = new RegExp("^[0-9]*$");
 
@@ -55,7 +56,24 @@ function Form() {
 
       if(validname && validphone){
         formTextRef.current.style.opacity="0"
-        successFormRef.current.style.opacity="1"
+
+        gsap.from(
+      
+            successFormRef.current,
+           
+            {
+              width:"0%",
+              opacity:0,
+              duration:0.6,
+              scrollTrigger: {
+                trigger: ".successForm",
+               
+               
+                // markers:true,
+              },
+            }
+          )
+        // successFormRef.current.style.opacity="1"
       }
      
 
@@ -97,7 +115,7 @@ function Form() {
 
                 <div className='form-row2'>
                    
-                    <select name='change tariff'>
+                    <select name='change tariff' width={{width:"100%"}}>
                         <option>Select tariff</option>
                         <option>XX</option>
                         <option>XX</option>

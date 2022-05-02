@@ -2,6 +2,7 @@ import React,{useRef} from 'react'
 import project1 from '../assets/project1.png'
 import "../Project/Project.css"
 import success from "../assets/check-mark_ccexpress.png"
+import gsap from 'gsap'
 
 function Project() {
 
@@ -11,10 +12,27 @@ function Project() {
 
     const projectTap=()=>{
         headingRef.current.style.opacity="0"
-        projectSucces.current.style.opacity="1"
+       
         projectTapRef.current.style.background="white"
         projectTapRef.current.style.color="#435877"
         projectTapRef.current.style.border="1px solid #435877 "
+
+        gsap.from(
+      
+            projectSucces.current,
+           
+            {
+              width:"0%",
+              opacity:0,
+              duration:0.6,
+              scrollTrigger: {
+                trigger: ".projectSuccess",
+               
+               
+                // markers:true,
+              },
+            }
+          )
 
 
 

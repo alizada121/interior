@@ -169,6 +169,16 @@ color: #6B7E9B;
     #menu-btn{
         display: flex;
     }
+
+    .mobile-menu-container {
+        width: 100%;
+        position: absolute;
+        right: 180%;
+    }
+
+    .mobile-menu-div p{
+        margin-left: 10px;
+    }
 }
 
 @media screen and (min-width: 414px) and (max-width: 768px) {

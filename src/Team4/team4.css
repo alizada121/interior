@@ -14,12 +14,17 @@
 
 }
 
+.team-text{
+    min-height: 360px;
+}
+
 .changable-team-cont{
     width: 70%;
     /* padding-top: 6%; */
     position: relative;
     /* height: 500px; */
     /* margin-top: 8%; */
+    min-height: 1440px;
 }
 
 .changable-team{

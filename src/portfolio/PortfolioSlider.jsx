@@ -6,6 +6,9 @@ import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.js";
 import portfolio1 from "../assets/portfolio3.png"
 import portfolio2 from "../assets/portfolio2.png"
 import portfolio3 from "../assets/portfolio3.png"
+import portfolio4 from "../assets/slider5.jpg"
+import portfolio5 from "../assets/slider6.jpg"
+import portfolio6 from "../assets/slider7.jpg"
 
 import "../portfolio/PortfolioSlider.css"
 
@@ -395,20 +398,20 @@ function PortfolioSlider() {
 
             <div className='portfolioSlider-images-part2' ref={triple2}> 
             <div className='portfolioSlider-image' onMouseOver={hoverOn4} onMouseLeave={hoverOff4}>
-                <img src={portfolio3} ref={portfolio4Ref}></img>
+                <img src={portfolio5} ref={portfolio4Ref}></img>
                 <div className='portfolioSlider-description' ref={portfolioSliderDescriptionRef4}><p>Nibh habitasse ikinic</p></div>
                 <div className='portfolioSlider-button' ref={portfolioSliderButtonRef4}> <button><p>Order a Project</p></button></div>
             </div>
             
             <div className='portfolioSlider-image' onMouseOver={hoverOn5} onMouseLeave={hoverOff5}>
-            <img src={portfolio2} ref={portfolio5Ref}></img>
+            <img src={portfolio5} ref={portfolio5Ref}></img>
             <div className='portfolioSlider-description' ref={portfolioSliderDescriptionRef5}><p>Nibh habitasse nulla</p> </div>
             <div className='portfolioSlider-button' ref={portfolioSliderButtonRef5}> <button><p>Order a Project</p></button></div>
             </div>
             
 
             <div className='portfolioSlider-image' onMouseOver={hoverOn6} onMouseLeave={hoverOff6}>
-            <img src={portfolio1} ref={portfolio6Ref}></img>
+            <img src={portfolio6} ref={portfolio6Ref}></img>
             <div className='portfolioSlider-description'  ref={portfolioSliderDescriptionRef6}> <p>Nibh habitasse nulla</p></div>
             <div className='portfolioSlider-button' ref={portfolioSliderButtonRef6}> <button><p>Order a Project</p></button></div>
             </div>
@@ -443,20 +446,20 @@ function PortfolioSlider() {
 
             <div className='portfolioSlider-images-part4' ref={triple4}> 
             <div className='portfolioSlider-image' onMouseOver={hoverOn10} onMouseLeave={hoverOff10}>
-                <img src={portfolio1} ref={portfolio10Ref}></img>
+                <img src={portfolio6} ref={portfolio10Ref}></img>
                 <div className='portfolioSlider-description' ref={portfolioSliderDescriptionRef10}><p>Nibh habitasse dord</p></div>
                 <div className='portfolioSlider-button' ref={portfolioSliderButtonRef10}> <button><p>Order a Project</p></button></div>
             </div>
             
             <div className='portfolioSlider-image' onMouseOver={hoverOn11} onMouseLeave={hoverOff11}>
-            <img src={portfolio2} ref={portfolio11Ref}></img>
+            <img src={portfolio5} ref={portfolio11Ref}></img>
             <div className='portfolioSlider-description' ref={portfolioSliderDescriptionRef11}><p>Nibh habitasse nulla</p> </div>
             <div className='portfolioSlider-button' ref={portfolioSliderButtonRef11}> <button><p>Order a Project</p></button></div>
             </div>
             
 
             <div className='portfolioSlider-image' onMouseOver={hoverOn12} onMouseLeave={hoverOff12}>
-            <img src={portfolio3} ref={portfolio12Ref}></img>
+            <img src={portfolio6} ref={portfolio12Ref}></img>
             <div className='portfolioSlider-description'  ref={portfolioSliderDescriptionRef12}> <p>Nibh habitasse nulla</p></div>
             <div className='portfolioSlider-button' ref={portfolioSliderButtonRef12}> <button><p>Order a Project</p></button></div>
             </div>

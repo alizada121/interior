@@ -1,4 +1,4 @@
-import React,{useRef,useState} from 'react'
+import React,{useRef,useEffect,useState} from 'react'
 import "../slider-page/SliderText.css"
 
 import succesMark from "../assets/check-mark_ccexpress.png"
@@ -7,7 +7,30 @@ import { gsap } from "gsap";
 
 const PHONE_REGEX = new RegExp("^[0-9]*$");
 
+
 function SliderText() {
+  const sliderTextRef=useRef();
+
+
+  useEffect(()=>{
+    gsap.fromTo(
+      
+      sliderTextRef.current,
+      {
+        x:-80
+      },
+      {
+        x:0,
+        duration:1,
+        scrollTrigger: {
+          trigger: ".sliderText",
+         
+         
+          // markers:true,
+        },
+      }
+    )
+  },[])
   const [name, setname] = useState('')
   const nameRef = useRef();
   const [validname,setValidname]=useState()
@@ -82,6 +105,37 @@ function SliderText() {
     taptextRef.current.style.opacity="0"
     textImgRef.current.style.opacity="1"
 
+    gsap.from(
+      textImgRef.current,
+    
+      {
+        width:"0%",
+        opacity:0,
+        duration:0.6
+      }
+
+
+    )
+
+    gsap.from(
+      
+      successbtn.current,
+     
+      {
+        width:"0%",
+        opacity:0,
+        duration:0.6,
+        scrollTrigger: {
+          trigger: "#ordre",
+         
+         
+          // markers:true,
+        },
+      }
+    )
+
+    
+
     }
   
 
@@ -118,7 +172,7 @@ function SliderText() {
 
   return (
     <div className='sliderText-container'>
-        <div className='sliderText'>
+        <div className='sliderText' ref={sliderTextRef}>
             <div className='sliderText-header'>
             <h1>
              <b>Beautiful and sustainable</b>

@@ -1,12 +1,34 @@
-import React, {useRef} from 'react'
+import React, {useRef,useEffect} from 'react'
 import slider1 from '../assets/slider1.png'
 import slider2 from '../assets/interior-project1.png'
 import slider3 from '../assets/interior-project2_ccexpress.png'
 import slider4 from '../assets/interior-project3_ccexpress.png'
+import gsap from 'gsap'
 
 import "././Slider.css"
 
 function Slider() {
+
+  const sliderRef=useRef();
+  useEffect(()=>{
+    gsap.fromTo(
+      
+      sliderRef.current,
+      {
+        x:40
+      },
+      {
+        x:0,
+        duration:1,
+        scrollTrigger: {
+          trigger: ".slider-container",
+         
+         
+          // markers:true,
+        },
+      }
+    )
+  })
 
   const sliderRef1=useRef();
   const sliderRef2=useRef();
@@ -75,7 +97,7 @@ function Slider() {
 
   return (
     <div className='slider-general'>
-        <div className='slider-container'>
+        <div className='slider-container' ref={sliderRef}>
        
     
         <div className='slider'>
